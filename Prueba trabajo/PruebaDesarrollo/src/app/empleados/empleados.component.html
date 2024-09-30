@@ -10,11 +10,18 @@
     <div class="col-md-6">
       <label class="fw-bold">NOMBRE</label>  
       <input type="text" class="form-control rounded-5" formControlName="nombre">
+      <span *ngIf="this.formEmpleadoAgregar.get('nombre')?.errors?.['required']">
+        <p style="color: red;">(El nombre no puede quedar vacío)</p>
+      </span>
     </div>
 
     <div class="col-md-6">
       <label class="fw-bold">APELLIDO</label>  
       <input type="text" class="form-control rounded-5" formControlName="apellido">
+      <span *ngIf="this.formEmpleadoAgregar.get('apellido')?.errors?.['required']">
+        <p style="color: red;">(El apellido no puede quedar vacío)</p>
+      </span>
+
     </div>
 
   </div>
@@ -30,6 +37,9 @@
   <div class="col-md-6">
     <label class="fw-bold">CARGO</label>  
     <input type="text" class="form-control rounded-5" formControlName="nombre_cargo">
+    <span *ngIf="this.formEmpleadoAgregar.get('nombre_cargo')?.errors?.['required']">
+      <p style="color: red;">(El campo cargo no puede quedar vacío)</p>
+    </span>
   </div>
 
 </div>
@@ -38,6 +48,9 @@
   <div class="col-md-6">
     <label class="fw-bold">FECHA DE CONTRATACIÓN</label>  
     <input type="date" class="form-control rounded-5" formControlName="fecha_contratacion">
+    <span *ngIf="this.formEmpleadoAgregar.get('fecha_contratacion')?.errors?.['required']">
+      <p style="color: red;">(El campo fecha no puede quedar vacío)</p>
+    </span>
   </div>
 </div>
 <div></div>
@@ -117,7 +130,8 @@
 
             <div class="mb-3 row">
               <label class="fw-bold">NOMBRE</label>             
-                <input type="text" class="form-control rounded-5" formControlName="nombre">               
+                <input type="text" class="form-control rounded-5" formControlName="nombre">
+                               
             </div>
   
             <div class="mb-3 row">

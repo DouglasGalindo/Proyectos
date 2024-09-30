@@ -36,26 +36,29 @@ ngOnInit(): void {
   this.listarRoles();*/
   //console.log(this.usuario);
   this.formEmpleado = new FormGroup({
-    codigo: new FormControl('', [Validators.required,]),
-    nombre: new FormControl('', [Validators.required,]),
-    apellido: new FormControl('', [Validators.required,]),
-    id_departamento: new FormControl('', [Validators.required,]),
-    nombre_cargo: new FormControl('', [Validators.required,]),
-    fecha_contratacion: new FormControl('', [Validators.required,]),
+    codigo: new FormControl('', [Validators.required]),
+    nombre: new FormControl('', [Validators.required]),
+    apellido: new FormControl('', [Validators.required]),
+    id_departamento: new FormControl('', [Validators.required]),
+    nombre_cargo: new FormControl('', [Validators.required]),
+    fecha_contratacion: new FormControl('', [Validators.required]),
   });
 
   this.formEmpleadoAgregar = new FormGroup({
-    codigo: new FormControl('', [Validators.required,]),
-    nombre: new FormControl('', [Validators.required,]),
-    apellido: new FormControl('', [Validators.required,]),
-    id_departamento: new FormControl('', [Validators.required,]),
-    nombre_cargo: new FormControl('', [Validators.required,]),
-    fecha_contratacion: new FormControl('', [Validators.required,]),
+    codigo: new FormControl('', [Validators.required]),
+    nombre: new FormControl('', [Validators.required]),
+    apellido: new FormControl('', [Validators.required]),
+    id_departamento: new FormControl('', [Validators.required]),
+    nombre_cargo: new FormControl('', [Validators.required]),
+    fecha_contratacion: new FormControl('', [Validators.required]),
   });
 
 
 
 }
+
+
+
 
 
 
@@ -136,3 +139,5 @@ newCard(){
 
 
 }
+
+
